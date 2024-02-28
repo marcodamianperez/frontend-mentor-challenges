@@ -4,4 +4,4 @@
 
 ##### :point_right: Coding challenge [here](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
-##### :point_right: My solution [here](https://fmc-qr-code-component.netlify.app/)
+##### :point_right: My solution [here](https://marcodamianperez.github.io/frontend-mentor-challenges/qr-code-component/)
