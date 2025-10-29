@@ -1,6 +1,6 @@
 <div align="center">
     <a href="#">
-    <img src="./assets/banner.png" /> 
+    <img src="./assets/banner_v2.png" /> 
     </a>
 </div>
 
@@ -13,6 +13,7 @@
 </div>
 
 ## :fire: Challenges
-| # | Name      | Challenge | Solution | Code |
-| --- |-----------|-----------|----------|-----------|
-| 1 | QR Code Component | [Link](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) | [Link](https://marcodamianperez.github.io/frontend-mentor-challenges/qr-code-component/) | [Code](https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/qr-code-component) |
+
+| #   | Name              | Challenge                                                                    | Solution                                                                                 | Code                                                                                               |
+| --- | ----------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| 1   | QR Code Component | [Link](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) | [Link](https://marcodamianperez.github.io/frontend-mentor-challenges/qr-code-component/) | [Code](https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/qr-code-component) |
