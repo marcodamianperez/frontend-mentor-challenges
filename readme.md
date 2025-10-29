@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="#">
     <img src="https://marcodamianperez.github.io/frontend-mentor-challenges/assets/banner.png" alt="banner" />
-  </a>
 </div>
 
 <div align="center">
