@@ -1,0 +1,400 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(./assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(202, 86%, 94%);
+  font-weight: 500;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.main-section {
+  background-color: #fff;
+  display: flex;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 50%;
+}
+
+.calculator-section,
+.results-section {
+  padding: 3rem;
+  width: 50%;
+}
+
+.calculator-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.calculator-title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.btn-clear {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border: none;
+  background-color: transparent;
+  color: hsl(200, 26%, 54%);
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.mortgage-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-label,
+.form-legend {
+  font-weight: inherit;
+  color: hsl(200, 24%, 40%);
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.input-with-prefix,
+.input-with-suffix {
+  display: flex;
+  border: 1px solid hsl(200, 24%, 40%);
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: all 0.1s linear;
+}
+
+.input-with-prefix:focus-within,
+.input-with-suffix:focus-within {
+  border: 1px solid hsl(61, 70%, 52%);
+}
+
+.input-with-prefix:focus-within .prefix,
+.input-with-suffix:focus-within .suffix {
+  background-color: hsl(61, 70%, 52%);
+}
+
+.form-input,
+.radio-label {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.form-input[type="number"]::-webkit-inner-spin-button,
+.form-input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Quitar flechas en Firefox */
+.form-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.prefix,
+.suffix {
+  padding: 1rem 1.5rem;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: hsl(202, 86%, 94%);
+  color: hsl(200, 24%, 40%);
+  transition: all 0.1s linear;
+}
+
+/* Error state */
+.form-group.error .input-with-prefix,
+.form-group.error .input-with-suffix {
+  border-color: hsl(4, 69%, 50%);
+}
+
+.form-group.error .prefix,
+.form-group.error .suffix {
+  background-color: hsl(4, 69%, 50%);
+  color: white;
+}
+
+.required-message.hidden {
+  display: none;
+}
+
+.form-group.error .required-message {
+  display: block;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-fielset {
+  border: none;
+}
+
+.radio-option {
+  border: 1px solid hsl(200, 24%, 40%);
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  transition: all 0.1s linear;
+  padding: 0.3rem 1rem;
+}
+
+/* Margen entre opciones */
+.radio-option:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* Efecto al hacer focus */
+.radio-option:focus-within {
+  border: 1px solid hsl(61, 70%, 52%);
+  background-color: rgba(215, 218, 47, 0.2);
+}
+
+/* Ocultar radio original */
+.radio-option input {
+  appearance: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-inline: 1rem;
+  border: 2px solid hsl(200, 24%, 40%);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* El puntito interno */
+.radio-option input::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: hsl(61, 70%, 52%);
+
+  /* Oculto por defecto */
+  transform: scale(0);
+  transition: transform 0.1s linear;
+}
+
+/* Cuando está checked → bordes + puntito */
+.radio-option input:checked {
+  border-color: hsl(61, 70%, 52%);
+}
+
+.radio-option input:checked::after {
+  transform: scale(1); /* muestra el puntito */
+}
+
+/* También cambia el fondo del contenedor cuando está checked */
+.radio-option:has(input:checked) {
+  background-color: rgba(215, 218, 47, 0.2);
+  border: 1px solid hsl(61, 70%, 52%);
+}
+
+.btn-primary {
+  background-color: hsl(61, 70%, 52%);
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+  margin-top: 1rem;
+  border-radius: 10rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary img {
+  width: 2.2rem;
+}
+
+.required-message {
+  display: block; /* display: block/none */
+  color: hsl(4, 69%, 50%);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.results-section {
+  background-color: hsl(202, 55%, 16%);
+  border-radius: 0 0 0 7rem;
+}
+
+.results-empty {
+  height: 100%;
+  display: flex; /* display: flex/none */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.results-empty img {
+  width: 40%;
+}
+
+.results-title {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.results-info {
+  color: hsl(203, 41%, 72%);
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.results-completed {
+  display: flex; /* display: flex/none */
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.results {
+  background-color: hsla(202, 56%, 13%);
+  border-radius: 1rem;
+  border-top: 4px solid hsl(61, 70%, 52%);
+  padding: 3rem;
+  margin-top: 1.5rem;
+}
+
+.results-amount {
+  color: hsl(61, 70%, 52%);
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(200, 24%, 40%);
+  margin: 3rem 0;
+}
+
+.results-total {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+/*** Media queries ***/
+
+@media (width < 1650px) {
+  .main-section {
+    width: 65%;
+  }
+}
+
+@media (width < 1250px) {
+  .main-section {
+    width: 85%;
+  }
+}
+
+@media (width < 950px) {
+  .main-section {
+    width: 50%;
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .calculator-section,
+  .results-section {
+    width: 100%;
+  }
+
+  .results-section {
+    border-radius: 0;
+  }
+
+  .calculator-title-section {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}
+
+@media (width < 700px) {
+  .main-section {
+    width: 85%;
+  }
+}
+
+@media (width < 450px) {
+  .main-section {
+    width: 100%;
+  }
+
+  .btn-primary {
+    font-size: 1.6rem;
+  }
+
+  .btn-primary img {
+    width: 2rem;
+  }
+
+  .results-amount {
+    font-size: 4rem;
+  }
+}
