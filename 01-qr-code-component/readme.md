@@ -1,13 +1,24 @@
-# QR code component
+# 01 - QR Code Component
 
-## :question: Why
-
-The first project once you start your challenge journey on Frontend Mentor.
-
-## :computer: What did I learn/practice
-
-Not much, really. This challenge helped me build some momentum.
+Solución al desafío de maquetado [QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) de Frontend Mentor.
 
 ---
 
-_You can find the live version of this project — and all the others — in the main README of this repo._
+### 🚀 Demos y Enlaces
+
+- 🌐 **Demo en vivo:** [Ver aplicación desplegada](https://marcodamianperez.github.io/frontend-mentor-challenges/01-qr-code-component/)
+- 📄 **Desafío original:** [Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
+
+---
+
+### 🛠️ Tecnologías Utilizadas
+
+- `HTML5` (Maquetado semántico)
+- `CSS3` (Posicionamiento del elemento principal)
+
+---
+
+### 💡 Aprendizajes Clave
+
+- Centralización de elementos en pantalla utilizando la vieja pero confiable técnica de `position: abosolute` y `transform: translate`.
+- Uso de clases y propiedades básicas CSS.
