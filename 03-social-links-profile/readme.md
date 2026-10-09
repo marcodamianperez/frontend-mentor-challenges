@@ -1,13 +1,24 @@
-# Social links profile
+# 03 - Social links profile
 
-## :question: Why
-
-Yet another super simple project, I know. I’m trying to build the habit of coding every day, so when I don’t feel like it I use these types of projects to stay sharp without relying on any CSS preprocessors or frameworks.
-
-## :computer: What did I learn/practice
-
-This profile card was the perfect opportunity to remind me that you don't always need flexbox and tons of code, sometimes good old margins and padding get the job done. I also put an old-school centering trick into practice using absolute positioning.
+Solución al desafío de maquetado [Social links profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) de Frontend Mentor.
 
 ---
 
-_You can find the live version of this project — and all the others — in the main README of this repo._
+### 🚀 Demos y Enlaces
+
+- 🌐 **Demo en vivo:** [Ver aplicación desplegada](https://marcodamianperez.github.io/frontend-mentor-challenges/03-social-links-profile/)
+- 📄 **Desafío original:** [Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
+
+---
+
+### 🛠️ Tecnologías Utilizadas
+
+- `HTML5`
+- `CSS3`
+
+---
+
+### 💡 Aprendizajes Clave
+
+- Práctica del uso de bordes para la foto de perfil y efectos hover para los links.
+- Implementación de posicionamiento absoluto como alternativa a flexbox.
