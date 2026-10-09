@@ -1,20 +1,20 @@
 <div align="center">
-    <img src="https://marcodamianperez.github.io/frontend-mentor-challenges/assets/banner.png" alt="banner" />
+    <img src="https://marcodamianperez.github.io/frontend-mentor-challenges/assets/banner.png" alt="Frontend Mentor Challenges Banner" />
 </div>
 
-<div align="center">
-    <h3>This repository contains challenges from <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>, a platform that provides web development challenges and projects to help developers improve their frontend skills.</h3>
-    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-    <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
-    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-</div>
+<br />
 
-## :fire: Challenges
+### Soluciones a desafíos de [Frontend Mentor](https://www.frontendmentor.io)
 
-| #   | Name                                                 | Challenge                                                                                                                                    | Solution                                                                                                                                                  | Code                                                                                                                                                                |
-| --- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 01  | QR code component                                    | <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" target="_blank">Link</a>                                      | <a href="https://marcodamianperez.github.io/frontend-mentor-challenges/01-qr-code-component/" target="_blank">Link</a>                                    | <a href="https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/01-qr-code-component" target="_blank">Code</a>                                    |
-| 02  | Huddle landing page with single introductory section | <a href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0" target="_blank">Link</a> | <a href="https://marcodamianperez.github.io/frontend-mentor-challenges/02-huddle-landing-page-with-single-introductory-section/" target="_blank">Link</a> | <a href="https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/02-huddle-landing-page-with-single-introductory-section" target="_blank">Code</a> |
-| 03  | Social links profile                                 | <a href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ" target="_blank">Link</a>                                  | <a href="https://marcodamianperez.github.io/frontend-mentor-challenges/03-social-links-profile/" target="_blank">Link</a>                                 | <a href="https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/03-social-links-profile" target="_blank">Code</a>                                 |
-| 04  | Mortgage repayment calculator                        | <a href="https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73" target="_blank">Link</a>                         | <a href="https://marcodamianperez.github.io/frontend-mentor-challenges/04-mortgage-repayment-calculator/" target="_blank">Link</a>                        | <a href="https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/04-mortgage-repayment-calculator" target="_blank">Code</a>                        |
+Este repositorio reúne mis resoluciones a diversos retos de maquetado e interactividad de Frontend Mentor, enfocados en mejorar habilidades de maquetado semántico, diseño adaptable y lógica frontend.
+
+---
+
+## 🔥 Lista de Desafíos
+
+| # | Desafío | Tecnologías | Desafío Original | Demo en Vivo | Código Fuente |
+| :-: | :--- | :--- | :-: | :-: | :-: |
+| 01 | **QR code component** | `HTML5` `CSS3` | [Ver Desafío](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) | [Ver Demo](https://marcodamianperez.github.io/frontend-mentor-challenges/01-qr-code-component/) | [Ver Código](https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/01-qr-code-component) |
+| 02 | **Huddle landing page** | `HTML5` `CSS3` | [Ver Desafío](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0) | [Ver Demo](https://marcodamianperez.github.io/frontend-mentor-challenges/02-huddle-landing-page-with-single-introductory-section/) | [Ver Código](https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/02-huddle-landing-page-with-single-introductory-section) |
+| 03 | **Social links profile** | `HTML5` `CSS3` | [Ver Desafío](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) | [Ver Demo](https://marcodamianperez.github.io/frontend-mentor-challenges/03-social-links-profile/) | [Ver Código](https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/03-social-links-profile) |
+| 04 | **Mortgage repayment calculator** | `HTML5` `CSS3` `JS` | [Ver Desafío](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73) | [Ver Demo](https://marcodamianperez.github.io/frontend-mentor-challenges/04-mortgage-repayment-calculator/) | [Ver Código](https://github.com/marcodamianperez/frontend-mentor-challenges/tree/main/04-mortgage-repayment-calculator) |
