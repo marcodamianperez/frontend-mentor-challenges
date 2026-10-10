@@ -1,13 +1,25 @@
-# Mortgage repayment calculator
+# 04 - Mortgage repayment calculator
 
-## :question: Why
-
-This project, although it looks simple at first glance, took me a fair amount of time and effort. I wanted to build something small but complete, a challenge that forced me to think through UI details, validation flow, edge cases, and overall UX.
-
-## :computer: What did I learn/practice
-
-The main goal with this challenge was to practice some client-side form validation without relaying on any libraries. I also got to refine the styling, especially around adding visual cues for invalid or incomplete fields. Overall, it was a great exercise in tying together JavaScript logic, DOM manipulation, and interface feedback.
+Solución al desafío de maquetado [Mortgage repayment calculator](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73) de Frontend Mentor.
 
 ---
 
-_You can find the live version of this project — and all the others — in the main README of this repo._
+### 🚀 Demos y Enlaces
+
+- 🌐 **Demo en vivo:** [Ver aplicación desplegada](https://marcodamianperez.github.io/frontend-mentor-challenges/04-mortgage-repayment-calculator/)
+- 📄 **Desafío original:** [Frontend Mentor](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73)
+
+---
+
+### 🛠️ Tecnologías Utilizadas
+
+- `HTML5`
+- `CSS3`
+- `JS`
+
+---
+
+### 💡 Aprendizajes Clave
+
+- Manejo y validación de formularios utilizando JavaScript Vanilla.
+- Uso de estilos condicionales en tiempo real, dependiendo de si el formulario está completo y con los datos correctos.
