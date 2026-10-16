@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar";
 
 function Home() {
   return (
-    <>
-      <Navbar />
-    </>
+    <div className="text-sm">
+      <Navbar title="Where in the world?" />
+    </div>
   );
 }
 

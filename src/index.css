@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Sans", sans-serif;
+
+  --color-dark-mode-element: hsl(209 23% 22%);
+  --color-dark-mode-bg: hsl(207 26% 17%);
+  --color-light-mode-text: hsl(200 15% 8%);
+  --color-light-mode-input: hsl(0 0% 50%);
+  --color-light-mode-bg: hsl(0 0% 99%);
+}
