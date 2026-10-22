@@ -6,20 +6,20 @@ function CountryDetail() {
   const navigate = useNavigate();
   const { countryName } = useParams();
   return (
-    <div className="bg-dark-mode-bg text-white text-sm">
-      <div className="py-10 w-[85%] mx-auto">
+    <div className="bg-dark-mode-bg text-white text-sm h-screen">
+      <div className="py-10 w-[85%] max-w-6xl mx-auto sm:w-[90%] md:py-18">
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center gap-2 bg-dark-mode-element py-1 px-6 rounded-xs shadow mb-16"
+          className="flex items-center gap-2 bg-dark-mode-element py-1 px-6 rounded-xs shadow-md mb-16 cursor-pointer md:py-2"
         >
           <IoArrowBack />
           <span>Back</span>
         </button>
 
-        <div className="flex flex-col gap-12">
-          <img src="https://placehold.co/500x300" alt="flag" />
-          <div className="flex flex-col gap-10">
-            <h1 className="font-extrabold text-2xl">{countryName}</h1>
+        <div className="flex flex-col gap-12 md:flex-row md:gap-18 md:justify-between lg:gap-26">
+          <img src="https://placehold.co/500x300" alt="flag" className="max-w-md shadow-md" />
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+            <h1 className="font-extrabold text-2xl lg:col-span-full">{countryName}</h1>
             <div className="flex flex-col gap-2.5">
               <p>
                 <span className="font-bold">Native Name: </span>Native Name
@@ -48,16 +48,16 @@ function CountryDetail() {
                 <span className="font-bold">Languages: </span>Language1, Language2
               </p>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 lg:col-span-full lg:flex-row">
               <h2 className="font-bold text-base">Border Countries:</h2>
               <div className="flex gap-2 flex-wrap text-xs">
-                <span className="flex items-center gap-2 bg-dark-mode-element py-1 px-6 rounded-xs shadow">
+                <span className="flex items-center gap-2 bg-dark-mode-element py-1 px-6 rounded-xs shadow-md">
                   Country1
                 </span>
-                <span className="flex items-center gap-2 bg-dark-mode-element py-1 px-6 rounded-xs shadow">
+                <span className="flex items-center gap-2 bg-dark-mode-element py-1 px-6 rounded-xs shadow-md">
                   Country2
                 </span>
-                <span className="flex items-center gap-2 bg-dark-mode-element py-1 px-6 rounded-xs shadow">
+                <span className="flex items-center gap-2 bg-dark-mode-element py-1 px-6 rounded-xs shadow-md">
                   Country3
                 </span>
               </div>
