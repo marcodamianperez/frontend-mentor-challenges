@@ -1,6 +1,13 @@
+import { Link } from "react-router-dom";
+
 function CountryCard() {
+  const countryName = "Country Name";
+
   return (
-    <div className="w-[75%] bg-dark-mode-element mx-auto pb-4 rounded-md overflow-hidden">
+    <Link
+      to={`/country/${countryName}`}
+      className="w-[75%] bg-dark-mode-element mx-auto pb-4 rounded-md overflow-hidden"
+    >
       <div>
         <img src="https://placehold.co/500x300" alt="flag" />
       </div>
@@ -16,7 +23,7 @@ function CountryCard() {
           <span className="font-semibold">Capital: </span>Capital
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
 
