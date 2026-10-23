@@ -10,7 +10,7 @@ function CountryDetail() {
       <div className="py-10 w-[85%] max-w-6xl mx-auto sm:w-[90%] md:py-18">
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center gap-2 bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element py-1 px-6 rounded-xs shadow-sm hover:shadow-md transition-shadow mb-16 cursor-pointer md:py-2"
+          className="flex items-center gap-2 bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element py-1 px-6 rounded-xs shadow-sm hover:shadow-md mb-16 cursor-pointer md:py-2"
         >
           <IoArrowBack />
           <span>Back</span>
@@ -51,13 +51,13 @@ function CountryDetail() {
             <div className="flex flex-col gap-3 lg:col-span-full lg:flex-row">
               <h2 className="font-bold text-base">Border Countries:</h2>
               <div className="flex gap-2 flex-wrap text-xs">
-                <span className="flex items-center gap-2 bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element py-1 px-6 rounded-xs shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                <span className="flex items-center gap-2 bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element py-1 px-6 rounded-xs shadow-sm hover:shadow-md cursor-pointer">
                   Country1
                 </span>
-                <span className="flex items-center gap-2 bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element py-1 px-6 rounded-xs shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                <span className="flex items-center gap-2 bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element py-1 px-6 rounded-xs shadow-sm hover:shadow-md cursor-pointer">
                   Country2
                 </span>
-                <span className="flex items-center gap-2 bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element py-1 px-6 rounded-xs shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                <span className="flex items-center gap-2 bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element py-1 px-6 rounded-xs shadow-sm hover:shadow-md cursor-pointer">
                   Country3
                 </span>
               </div>

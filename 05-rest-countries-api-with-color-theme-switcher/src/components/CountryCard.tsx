@@ -6,7 +6,7 @@ function CountryCard() {
   return (
     <Link
       to={`/country/${countryName}`}
-      className="max-w-3xs sm:max-w-full bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element mx-auto pb-4 rounded-md overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+      className="max-w-3xs sm:max-w-full bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element mx-auto pb-4 rounded-md overflow-hidden shadow-sm hover:shadow-md"
     >
       <img src="https://placehold.co/500x300" alt="flag" />
 

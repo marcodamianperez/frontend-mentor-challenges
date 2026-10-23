@@ -4,7 +4,7 @@ function SearchBar() {
   return (
     <label
       htmlFor="search"
-      className="text-light-mode-input dark:text-dark-mode-text-light-mode-element bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element px-8 py-4 flex items-center gap-6 rounded-md shadow-sm hover:shadow-md transition-shadow lg:w-md"
+      className="text-light-mode-input dark:text-dark-mode-text-light-mode-element bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element px-8 py-4 flex items-center gap-6 rounded-md shadow-sm hover:shadow-md lg:w-md"
     >
       <IoSearch className="text-xl" />
       <input
