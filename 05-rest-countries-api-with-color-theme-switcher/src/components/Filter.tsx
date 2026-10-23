@@ -2,8 +2,8 @@ import { IoChevronDown } from "react-icons/io5";
 
 function Filter() {
   return (
-    <div className="relative text-white">
-      <select className="bg-dark-mode-element px-8 py-4 rounded-md appearance-none w-full focus:outline-none shadow-md">
+    <div className="relative text-light-mode-input dark:text-dark-mode-text-light-mode-element">
+      <select className="bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element px-8 py-4 rounded-md appearance-none w-full outline-none shadow-sm hover:shadow-md transition-shadow">
         <option hidden disabled value="">
           Filter by Region
         </option>
