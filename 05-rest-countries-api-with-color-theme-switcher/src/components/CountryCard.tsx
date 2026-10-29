@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Country } from "../types/country";
-import { formatPopulation } from "../services/countries";
+import { formatPopulation, fallBackText } from "../services/countries";
 
 type CountryCardProps = {
   country: Country;
@@ -9,7 +9,7 @@ type CountryCardProps = {
 function CountryCard({ country }: CountryCardProps) {
   return (
     <Link
-      to={`/country/${country.name}`}
+      to={`/country/${country.alpha3Code}`}
       className="max-w-3xs sm:max-w-full bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element mx-auto pb-4 rounded-md overflow-hidden shadow-sm hover:shadow-md"
     >
       <img src={country.flag} alt={`${country.name} flag`} />
@@ -24,12 +24,11 @@ function CountryCard({ country }: CountryCardProps) {
           <span className="font-bold">Region: </span>
           {country.region}
         </p>
-        {country.capital && (
-          <p>
-            <span className="font-bold">Capital: </span>
-            {country.capital}
-          </p>
-        )}
+
+        <p>
+          <span className="font-bold">Capital: </span>
+          {country.capital || fallBackText()}
+        </p>
       </div>
     </Link>
   );

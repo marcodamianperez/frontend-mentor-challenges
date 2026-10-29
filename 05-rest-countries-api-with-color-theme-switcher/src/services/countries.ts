@@ -7,3 +7,7 @@ export async function fetchCountries() {
 export function formatPopulation(population: number): string {
   return new Intl.NumberFormat("en-US").format(population);
 }
+
+export function fallBackText(): string {
+  return "N/A";
+}
