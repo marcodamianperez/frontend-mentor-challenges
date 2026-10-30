@@ -1,6 +1,11 @@
 import { IoSearch } from "react-icons/io5";
 
-function SearchBar() {
+type SearchBarProps = {
+  input: string;
+  onHandleInput: (e: React.ChangeEvent<HTMLInputElement, Element>) => void;
+};
+
+function SearchBar({ input, onHandleInput }: SearchBarProps) {
   return (
     <label
       htmlFor="search"
@@ -8,6 +13,8 @@ function SearchBar() {
     >
       <IoSearch className="text-xl" />
       <input
+        value={input}
+        onChange={onHandleInput}
         id="search"
         className="outline-none w-full md:text-base placeholder:text-light-mode-input"
         placeholder="Search for a country..."
