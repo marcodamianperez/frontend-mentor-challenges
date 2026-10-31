@@ -1,14 +1,24 @@
 import { IoChevronDown } from "react-icons/io5";
 
-function Filter() {
+type FilterProps = {
+  selectedRegion: string;
+  onHandleRegion: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+};
+
+function Filter({ selectedRegion, onHandleRegion }: FilterProps) {
   return (
     <div className="relative text-light-mode-input dark:text-dark-mode-text-light-mode-element">
-      <select className="bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element px-8 py-4 rounded-md appearance-none w-full outline-none shadow-sm hover:shadow-md">
-        <option hidden disabled value="">
+      <select
+        className="bg-dark-mode-text-light-mode-element dark:bg-dark-mode-element px-8 pr-14 py-4 rounded-md appearance-none w-full outline-none shadow-sm hover:shadow-md"
+        value={selectedRegion}
+        name="selectedRegion"
+        onChange={onHandleRegion}
+      >
+        <option hidden disabled value="filterByRegion">
           Filter by Region
         </option>
         <option value="africa">Africa</option>
-        <option value="america">America</option>
+        <option value="americas">America</option>
         <option value="asia">Asia</option>
         <option value="europe">Europe</option>
         <option value="oceania">Oceania</option>

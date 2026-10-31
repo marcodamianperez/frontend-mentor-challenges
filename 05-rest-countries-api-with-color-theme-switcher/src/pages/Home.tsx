@@ -7,8 +7,9 @@ import type { Country } from "../types/country";
 
 function Home() {
   const [countries, setCountries] = useState<Country[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [input, setInput] = useState<string>("");
+  const [loading, setLoading] = useState(true);
+  const [input, setInput] = useState("");
+  const [selectedRegion, setSelectedRegion] = useState("filterByRegion");
 
   useEffect(() => {
     async function getCountries() {
@@ -28,13 +29,22 @@ function Home() {
     setInput(e.target.value);
   }
 
-  const filteredCountries = countries.filter((c) => c.name.toLowerCase().includes(input.toLowerCase()));
+  function handleRegion(e: React.ChangeEvent<HTMLSelectElement>) {
+    setSelectedRegion(e.target.value);
+  }
+
+  const filteredCountries = countries.filter((c) => {
+    const matchesSearch = c.name.toLowerCase().includes(input.toLowerCase());
+    const matchesRegion =
+      selectedRegion === "filterByRegion" || c.region.toLowerCase() === selectedRegion.toLowerCase();
+    return matchesSearch && matchesRegion;
+  });
 
   return (
     <div className="text-sm bg-light-mode-bg dark:bg-dark-mode-bg py-8 flex flex-col gap-12">
       <div className="flex flex-col gap-8 w-[90%] max-w-6xl mx-auto sm:flex-row sm:justify-between">
         <SearchBar input={input} onHandleInput={handleInput} />
-        <Filter />
+        <Filter selectedRegion={selectedRegion} onHandleRegion={handleRegion} />
       </div>
       {loading ? (
         <p>Cargando países...</p>
