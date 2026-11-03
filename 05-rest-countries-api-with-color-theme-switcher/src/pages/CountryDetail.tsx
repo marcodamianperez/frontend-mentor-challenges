@@ -28,11 +28,11 @@ function CountryDetail() {
   const country = countries.find((c) => c.alpha3Code === name);
 
   if (loading) {
-    return <p className="text-center mt-20">Cargando país...</p>;
+    return <p className="text-center mt-20">Loading country info...</p>;
   }
 
   if (!country) {
-    return <p className="text-center mt-20">País no encontrado</p>;
+    return <p className="text-center mt-20">Country not found</p>;
   }
 
   return (
